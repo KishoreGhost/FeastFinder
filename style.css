@@ -1,0 +1,119 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+#body{
+    background-color: #63A77E;
+}
+
+#header{
+    width: 84.34rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#top-left{
+    display: flex;
+    align-items: center;
+    width: 17.4rem;
+    margin-left: 15px;
+    justify-content: space-around;
+}
+
+#top-right{
+    display: flex;
+    width: 18.75rem;
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+.web-name{
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+.fun{
+    color: white;
+    font-size: 25px;
+}
+
+#main{
+    text-align: center;
+}
+
+#main-title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#main-desc{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 25px;
+    /* padding-top: 10px; */
+}
+
+#search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.search-box{
+    border-radius: 15px;
+    height: 1.75rem;
+}
+
+#random-generator{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+#random-title{
+    /* border: 2px solid black; */
+    justify-content: flex-start;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 1.5%;
+}
+
+#random-food{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-around; */
+    width: 500px;
+}
+
+#randomMealImg{
+    height: 300px;
+    width: 300px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#api-foodName{
+    margin-top: 15px;
+}
+
+.pointer{
+    cursor: pointer;
+}

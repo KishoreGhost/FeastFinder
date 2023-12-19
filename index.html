@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feast Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'> -->
+</head>
+<body>
+    <!-- navigation bar -->
+    <div id="header">
+        <div id="top-left">
+            <img src="./assets/logo.png" alt="" class="logo">
+            <p class="web-name">Feast Finder</p>
+        </div>
+        <div id="top-right">
+            <p class="fun pointer">Today's feast</p>
+            <p class="fun pointer">Credits</p>
+        </div>
+    </div>
+
+     <!-- body of the application -->
+    <div id="body">
+        <div id="main">
+            <p id="main-title">Feast Finder</p>
+            <p id="main-desc">
+                Introducing Feast Finder, your ultimate culinary companion for discovering<br>
+                delectable delights near and far. Unleash a world of taste at your fingertips<br>
+                with this innovative food finder application designed to satisfy every craving<br> 
+                and ignite your gastronomic adventures.
+            </p>
+            <div id="search-bar">
+                <input type="text" placeholder="Search for a meal" class="search-box">
+                <img src="./assets/search-logo.png" alt="" class="pointer">
+            </div>
+        </div>
+        <hr>
+
+        <!-- Division for generating random dishes on reloading the window -->
+        <div id="random-title"><u>Meal for the day</u></div>
+        <div id="random-generator">
+            
+            <div id="random-food">
+                <div id="api-image"></div>
+                <div id="api-foodName"></div>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Division for generating foods based on the input -->
+        <div id="input-meal"></div>
+    </div>
+</body>
+</html>
+<script src="./app.js"></script>
