@@ -10,7 +10,7 @@ body{
 }
 
 #header{
-    width: 84.34rem;
+    width: 100%;
     height: 9rem;
     display: flex;
     align-items: center;
@@ -34,7 +34,6 @@ body{
 }
 
 .web-name{
-    border: 2px solid white;
     font-weight: bold;
     font-size: 35px;
     color: white;
@@ -60,7 +59,6 @@ body{
     font-size: 22px;
     font-weight: 200;
     line-height: 25px;
-    /* padding-top: 10px; */
 }
 
 #search-bar{
@@ -80,12 +78,10 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* border: 2px solid red; */
     align-items: center;
 }
 
-#random-title{
-    /* border: 2px solid black; */
+#random-title, #user-input{
     justify-content: flex-start;
     font-size: 30px;
     font-weight: 700;
@@ -93,13 +89,11 @@ body{
 }
 
 #random-food{
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* justify-content: space-around; */
-    width: 500px;
+    width: 400px;
 }
 
 #randomMealImg{
@@ -116,4 +110,59 @@ body{
 
 .pointer{
     cursor: pointer;
+}
+
+#inputMealImg{
+    height: 400px;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+
+#meal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.meal p {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#ingred{
+    font-weight: 700;
+}
+
+#ingredients{
+    text-align: center;
+}
+
+#video-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#meal-details{
+    position: absolute;
+    background-color: #a1cab1;
+    z-index: 1;
+    /* margin: auto; */
+    border: 2px solid black;
+    width: 50%;
+    border-radius: 30px;
+}
+
+#container-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#close-logo{
+    height: 5%;
+    width: 5%;
 }

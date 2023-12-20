@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feast Finder</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'> -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
     <!-- navigation bar -->
@@ -32,15 +32,14 @@
             </p>
             <div id="search-bar">
                 <input type="text" placeholder="Search for a meal" class="search-box">
-                <img src="./assets/search-logo.png" alt="" class="pointer">
+                <img src="./assets/search-logo.png" alt="" class="pointer" id="search-button">
             </div>
         </div>
         <hr>
 
         <!-- Division for generating random dishes on reloading the window -->
-        <div id="random-title"><u>Meal for the day</u></div>
-        <div id="random-generator">
-            
+        <div id="random-title">Meal for the day</div>
+        <div id="random-generator">            
             <div id="random-food">
                 <div id="api-image"></div>
                 <div id="api-foodName"></div>
@@ -48,8 +47,23 @@
         </div>
         <hr>
         
-        <!-- Division for generating foods based on the input -->
-        <div id="input-meal"></div>
+        <!-- Division for showing the meals information(like ingredients) -->
+        <div id="user-input"></div>
+        <div id="meal-container">
+            <img id="mealImg" alt="">
+            <p id="mealName"></p>
+        </div>
+    </div>
+
+
+    <div id="meal-details">
+        <div id="container-top">
+            <h2 id="ingred">Ingredients:</h2>
+            <img src="./assets/close-logo.png" alt="" id="close-logo">
+        </div>
+        
+        <ul id="ingredients"></ul>
+        <div id="video-container"></div>
     </div>
 </body>
 </html>
