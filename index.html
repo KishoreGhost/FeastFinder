@@ -8,6 +8,10 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
+
+    <div class="loader-container" id="loader-container">
+        <div class="loader"></div>
+      </div>
     <!-- navigation bar -->
     <div id="header">
         <div id="top-left">
@@ -15,8 +19,8 @@
             <p class="web-name">Feast Finder</p>
         </div>
         <div id="top-right">
-            <p class="fun pointer">Today's feast</p>
-            <p class="fun pointer">Credits</p>
+            <p class="fun pointer random">Today's feast</p>
+            <p class="fun pointer credits">Credits</p>
         </div>
     </div>
 
@@ -26,12 +30,12 @@
             <p id="main-title">Feast Finder</p>
             <p id="main-desc">
                 Introducing Feast Finder, your ultimate culinary companion for discovering<br>
-                delectable delights near and far. Unleash a world of taste at your fingertips<br>
+                delectable delights near and far. Unleash div world of taste at your fingertips<br>
                 with this innovative food finder application designed to satisfy every craving<br> 
                 and ignite your gastronomic adventures.
             </p>
             <div id="search-bar">
-                <input type="text" placeholder="Search for a meal" class="search-box">
+                <input type="text" placeholder="Search for div meal" class="search-box">
                 <img src="./assets/search-logo.png" alt="" class="pointer" id="search-button">
             </div>
         </div>
@@ -45,26 +49,36 @@
                 <div id="api-foodName"></div>
             </div>
         </div>
-        <hr>
         
-        <!-- Division for showing the meals information(like ingredients) -->
-        <div id="user-input"></div>
-        <div id="meal-container">
-            <img id="mealImg" alt="">
-            <p id="mealName"></p>
+        
+        <!-- Division for showing meals according to the input given by the user -->
+        <div>
+            <hr>
+            <div id="full">
+                <div id="user-input"></div>
+                <div id="meal-container"></div>
+            </div>
         </div>
     </div>
 
-
+    <!-- Division for showing the meals information(like ingredients) -->
     <div id="meal-details">
-        <div id="container-top">
+        <div id="top">
             <h2 id="ingred">Ingredients:</h2>
-            <img src="./assets/close-logo.png" alt="" id="close-logo">
+            <img src="./assets/close-logo.png" alt="" id="close-logo" class="pointer">
         </div>
-        
-        <ul id="ingredients"></ul>
+        <div>
+            <ul id="ingredients"></ul>
+        </div>
         <div id="video-container"></div>
     </div>
+
+    <footer id="credits">
+        <div>Made by Kishore 🖤</div>
+        <img class="social-media pointer" src="./assets/github-logo.png" alt="">
+        <img class="social-media pointer" src="./assets/linkedIn-logo.png" alt="">
+        <img class="social-media pointer" src="./assets/insta-logo.png" alt="">
+    </footer>
 </body>
 </html>
 <script src="./app.js"></script>
