@@ -232,28 +232,120 @@ body{
 #top{
     display: flex;
     align-items: center;
-    justify-content: space-between
-}
-
-#credits{
-    background-color: black;
+    justify-content: space-between;
 }
 
 #credits div{
     color: white;
 }
 
-.social-media{
-    color: white;
-    height: 50px;
-    width: 50px;
+#credits{
+    background-color: black;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
 }
 
-#credits{
+.social-media{
+    height: 30px;
+    width: 30px;
+}
+
+#handles{
     display: flex;
-    align-items: center;
+    width: 300px;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+    .web-name{
+        font-size: 15px;
+    }
+
+    .fun{
+        font-size: 10px;
+        justify-content: center;
+        margin-left: 10px;     
+    }
+
+    .logo{
+        height: 30px;
+    }
+
+    #top-right{
+        display: flex;
+        width: 300px;
+        justify-content: end;
+        margin-right: 50px;
+    }
+
+    #top-left{
+        width: 110px;
+    }
+
+    #main-title{
+        font-size: 30px;
+    }
+
+    #main-desc{
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .search-box{
+        width: 100px;
+        height: 20px;
+    }
+    
+    #search-button{
+        width: 20px;
+        height: 20px;
+    }
+
+    #random-title{
+        font-size: 15px;
+    }
+
+    #randomMealImg{
+        height: 150px;
+        width:  150px;
+    }
+
+    #api-foodName{
+        font-size: 10px;
+    }
+
+    #close-logo{
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    #inputMealImg{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #full{
+        justify-content: center;
+    }
+
+    #credits div{
+        font-size: 10px;
+        width: max-content;
+    }
+
+    #handles{
+        width: 15%;
+        padding-right: 20px;
+    }
+
+    .social-media{
+        height: 15px;
+        width: 15px;
+    }
 }

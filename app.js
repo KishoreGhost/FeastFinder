@@ -9,10 +9,13 @@ fetchRandomMeal();
 
 // Event listener(click) for the search button
 searchButton.addEventListener("click", function () {
-  showLoader()
+  // showLoader()
   const input = document.querySelector(".search-box").value;
   if (input !== "") {
     fetchMealByName(input);
+    document.getElementById("meal-details").scrollIntoView({behavior: "smooth"})
+  }else{
+    alert("Please search for a meal")
   }
 });
 
@@ -22,6 +25,8 @@ inputBox.addEventListener("keydown", function (event) {
     const input = document.querySelector(".search-box").value;
     if (input !== "") {
       fetchMealByName(input);
+    }else{
+      alert("Please search for a meal")
     }
   } 
 });
@@ -116,21 +121,23 @@ function displayMealDetails(meal) {
 
 mealDetails =  document.getElementById("meal-details")
 apiImage.onclick = () =>{
-  showLoader()
+  // showLoader()
   mealDetails.style.visibility = "visible";
   document.getElementById("meal-details").scrollIntoView({behavior: "smooth"})
 }
 
 document.getElementById("close-logo").onclick = () =>{
-  showLoader()
+  // showLoader()
   mealDetails.style.visibility = "hidden";
+  document.getElementById("main-title").scrollIntoView({behavior: "smooth"})
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
   showLoader();
   setTimeout(function() {
     hideLoader(); 
-  }, 2000);
+  }, 1000);
 });
 
 function showLoader() {
