@@ -19,7 +19,7 @@ Welcome to Feast Finder, a web application that helps you discover new and excit
 1. Clone the repository to your local machine:
     git clone https://kishoreghost.github.io/FeastFinder/
 
-### Features
+## Features
   ## Random Meal Generator
   Upon loading the page or refreshing, a container on the page will display a random meal fetched from the MealDB API. Clicking on this container will reveal the ingredients of the       displayed meal.
 
