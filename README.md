@@ -4,13 +4,12 @@ Welcome to Feast Finder, a web application that helps you discover new and excit
 
 ## Table of Contents
 - [Getting Started](#getting-started)
--   -[Installation](#installation)
+-   [Installation](#installation)
 - [Features](#features)
   - [Random Meal Generator](#random-meal-generator)
   - [Search by Category](#search-by-category)
   - [Viewing Ingredients](#viewing-ingredients)
-- [Usage](#usage)
-- [Contributing](#contributing)
+
 - [License](#license)
 
 ## Getting Started
@@ -28,3 +27,6 @@ Welcome to Feast Finder, a web application that helps you discover new and excit
 
   ## Viewing Ingredients
   Click on any meal container to view its ingredients. This feature allows users to explore the details of a particular meal and get inspired to try new recipes.
+
+### License
+Feast Finder is licensed under the MIT License. Feel free to use, modify, and distribute the code for your own projects.
