@@ -4,7 +4,7 @@ Welcome to Feast Finder, a web application that helps you discover new and excit
 
 ## Table of Contents
 - [Getting Started](#getting-started)
-  - [Installation](#installation)
+-   -[Installation](#installation)
 - [Features](#features)
   - [Random Meal Generator](#random-meal-generator)
   - [Search by Category](#search-by-category)
@@ -14,22 +14,18 @@ Welcome to Feast Finder, a web application that helps you discover new and excit
 - [License](#license)
 
 ## Getting Started
-Make sure you have the following installed:
-
-- Web browser (e.g., Chrome, Firefox, Safari)
-- Internet connection
 
 ### Installation
 
 1. Clone the repository to your local machine:
     git clone https://kishoreghost.github.io/FeastFinder/
 
-##Features
-##Random Meal Generator
+### Features
+## Random Meal Generator
 Upon loading the page or refreshing, a container on the page will display a random meal fetched from the MealDB API. Clicking on this container will reveal the ingredients of the displayed meal.
 
-##Search by Category
+## Search by Category
 Use the input box provided to search for specific meal categories. Simply enter a keyword (e.g., "chicken," "vegetarian") and press Enter. The page will then display meals related to your search.
 
-##Viewing Ingredients
+## Viewing Ingredients
 Click on any meal container to view its ingredients. This feature allows users to explore the details of a particular meal and get inspired to try new recipes.
