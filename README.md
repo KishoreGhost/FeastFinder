@@ -28,5 +28,5 @@ Welcome to Feast Finder, a web application that helps you discover new and excit
   ## Viewing Ingredients
   Click on any meal container to view its ingredients. This feature allows users to explore the details of a particular meal and get inspired to try new recipes.
 
-### License
+## License
 Feast Finder is licensed under the MIT License. Feel free to use, modify, and distribute the code for your own projects.
