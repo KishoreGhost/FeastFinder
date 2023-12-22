@@ -259,6 +259,9 @@ body{
     align-items: center;
 }
 
+.none{
+    cursor: default;
+}
 @media only screen and (max-width: 425px) {
     .web-name{
         font-size: 15px;
