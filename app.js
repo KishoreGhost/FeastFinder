@@ -9,7 +9,6 @@ fetchRandomMeal();
 
 // Event listener(click) for the search button
 searchButton.addEventListener("click", function () {
-  // showLoader()
   const input = document.querySelector(".search-box").value;
   if (input !== "") {
     fetchMealByName(input);
@@ -65,7 +64,6 @@ function fetchMealByName(name) {
         ).innerHTML = `Results for "${userInput}"`;
         displayAllMeals(meals);
       } else {
-        // If no meals are found, do something or display a message
         document.getElementById("meal-container").innerHTML =
           "<p id='noMeal'>No meals found :(</p>";
       }
@@ -112,7 +110,6 @@ function displayMealDetails(meal) {
   const ingredientsText = items.join("<br>");
   ingredients.innerHTML = `<br>${ingredientsText}`;
 
-  // Display video
   videoContainer.innerHTML = `<iframe id='vid' width="560" height="315" src="${meal.strYoutube.replace(
     "watch?v=",
     "embed/"
